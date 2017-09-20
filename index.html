@@ -84,7 +84,100 @@
 		<br>
 		<p>There is one more alignment option in word. We can not do that in just HTML. We will need a little more. We will do that later, today.</p>
 	</div>
-	<div class="display"></div>
+	<div class="display images">
+		<p align="center">
+			<img src="images/yess.jpg" width="400" ><br>
+			This is an image, you can specify height or/and width. If you specify one then other will automatically be adjusted.<br>
+			<img src="images/thin.jpg" width="300" height="400"> 
+		</p>
+	</div>
+	<div class="memePun display">
+		<img src="images/memePun.jpg" width="100%" height="100%">
+	</div>
+	<div class="display lists">
+		<h1 style="text-align: center;"> LIST and TABLES.</h1>
+		<div>
+			<h2>List of Unordered things in my life :</h2>
+
+			<ul >
+			  <li>My Table</li>
+			  <li>My Bed</li>
+			  <li>My Acads</li>
+			  <li>My Life</li>
+			</ul>  
+
+			<img src="images/order.jpg" alt="ordered-list" style="width:700px;height:400px;"">
+
+			<h2>Ordered things in my Life :</h2>
+
+
+			<ol>
+			  <li>Couldn't</li>
+			  <li>Find</li>
+			  <li>One.  </li>
+			  <!--  <pre><insert>Sad emoji</insert></pre></li> -->
+			  <ul style="list-style-type:circle;">
+			  	<li>Sed</li>
+			  	<li>Reacts</li>
+			  	<li>only</li>
+			  		<ol type="a">
+			  			<li>:-(</li>
+			  		</ol>
+			  	
+			  </ul>
+			</ol> 
+		</div>
+	</div>
+	<div class="display tables">
+		<table width="700" >
+		  <tr>
+		    <th>Song</th>
+		    <th>Album</th> 
+		    <th>Year</th>
+		  </tr>
+		  <tr align="center">
+		    <td >It's My Life</td>
+		    <td>Crush</td>
+		    <td>2000</td>
+		  </tr>
+		  <tr>
+		    <td>Numb</td>
+		    <td>Meteora</td>
+		    <td>2003</td>
+		  </tr>
+		  <tr align="right">
+		    <td>Somewhere I Belong</td>
+		    <td>Meteora</td>
+		    <td>2003</td>
+		  </tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<table width="700" border="1">
+		  <tr>
+		    <th>Song</th>
+		    <th>Album</th> 
+		    <th>Year</th>
+		  </tr>
+		  <tr align="center">
+		    <td >It's My Life</td>
+		    <td>Crush</td>
+		    <td>2000</td>
+		  </tr>
+		  <tr>
+		    <td>Numb</td>
+		    <td>Meteora</td>
+		    <td>2003</td>
+		  </tr>
+		  <tr align="right">
+		    <td>Somewhere I Belong</td>
+		    <td>Meteora</td>
+		    <td>2003</td>
+		  </tr>
+		</table>
+
+	</div>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
 		var currentScreen = parseInt(localStorage.getItem("storedScreen"));
@@ -93,7 +186,7 @@
 			currentScreen = 0;
 			localStorage.setItem("storedScreen", currentScreen);
 		}
-		let screens = [".basicPage",".paragraphs",".specialCharacters",".headings",".styling",".allignment"];
+		let screens = [".basicPage",".paragraphs",".specialCharacters",".headings",".styling",".allignment",".images",".memePun",".lists",".tables"];
 		console.log(screens.length);
 		let toggleDisplay = function(divisionNumber) {
 			$('.display').hide();
