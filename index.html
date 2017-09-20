@@ -182,7 +182,7 @@
 	<script type="text/javascript">
 		var currentScreen = parseInt(localStorage.getItem("storedScreen"));
 		console.log(currentScreen);
-		if(currentScreen == null){
+		if(currentScreen == NaN){
 			currentScreen = 0;
 			localStorage.setItem("storedScreen", currentScreen);
 		}
