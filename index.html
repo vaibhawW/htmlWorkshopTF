@@ -96,37 +96,30 @@
 	</div>
 	<div class="display lists">
 		<h1 style="text-align: center;"> LIST and TABLES.</h1>
-		<div>
-			<h2>List of Unordered things in my life :</h2>
-
-			<ul >
-			  <li>My Table</li>
-			  <li>My Bed</li>
-			  <li>My Acads</li>
-			  <li>My Life</li>
-			</ul>  
-
-			<img src="images/order.jpg" alt="ordered-list" style="width:700px;height:400px;"">
-
-			<h2>Ordered things in my Life :</h2>
-
-
-			<ol>
-			  <li>Couldn't</li>
-			  <li>Find</li>
-			  <li>One.  </li>
-			  <!--  <pre><insert>Sad emoji</insert></pre></li> -->
-			  <ul style="list-style-type:circle;">
-			  	<li>Sed</li>
-			  	<li>Reacts</li>
-			  	<li>only</li>
-			  		<ol type="a">
-			  			<li>:-(</li>
-			  		</ol>
-			  	
-			  </ul>
-			</ol> 
-		</div>
+		<h2>List of Unordered things in my life :</h2>
+		<ul >
+		  <li>My Table</li>
+		  <li>My Bed</li>
+		  <li>My Acads</li>
+		  <li>My Life</li>
+		</ul>  
+		<img src="images/order.jpg" alt="ordered-list" style="width:700px;height:400px;">
+		<h2>Ordered things in my Life :</h2>
+		<ol>
+		  <li>Couldn't</li>
+		  <li>Find</li>
+		  <li>One.  </li>
+		  <!--  <pre><insert>Sad emoji</insert></pre></li> -->
+		  <ul style="list-style-type:circle;">
+		  	<li>Sed</li>
+		  	<li>Reacts</li>
+		  	<li>only</li>
+		  		<ol type="a">
+		  			<li>:-(</li>
+		  		</ol>
+		  	
+		  </ul>
+		</ol> 
 	</div>
 	<div class="display tables">
 		<table width="700" >
@@ -176,7 +169,23 @@
 		    <td>2003</td>
 		  </tr>
 		</table>
-
+	</div>
+	<div class="display division">
+		<div>
+			Divisions are basic blocks that we use to set styles and give properties. <br>
+			They are blocks. These screens that you just saw, are all 1-1 divisions each. <br>
+			When we have to define properties, like aligning items to center, or making them bold<br>
+			giving border etc. then we use divisions.
+		</div>
+		<div align="center">
+			Two paragraphs in center
+			<P>
+				Sed fringilla ante vel velit efficitur porttitor. Proin vulputate posuere purus, at finibus mauris scelerisque a.<br> Phasellus id sodales sapien, at vestibulum sapien. Integer interdum tellus quis diam tincidunt bibendum. Maecenas <br>condimentum sapien vel ornare tempus. Duis dolor libero, mattis vel orci vitae, blandit facilisis tortor. Morbi <br>gravida neque cursus lectus faucibus, et ultrices orci ornare. In sagittis vestibulum enim vel ullamcorper. <br>Vivamus consequat pulvinar cursus. Morbi finibus tellus in turpis ultrices molestie. Praesent tempus mauris non odio <br>rhoncus, quis venenatis risus ullamcorper. Praesent tellus leo, faucibus in ligula vel, auctor aliquam purus. <br>Sed congue erat id ante malesuada pulvinar. Donec suscipit velit eu lorem auctor, vitae condimentum leo <br>scelerisque. Vestibulum sem metus, venenatis a pretium vitae, dapibus ac tellus. <br>
+			</P>
+			<P>
+				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum sit <br> amet erat sem. Quisque accumsan luctus justo, congue interdum nisi interdum a. Nunc congue ante in orci fermentum<br> semper. Vestibulum et mi leo. Vivamus tristique neque vulputate, egestas nulla vel, dictum elit. Quisque viverra tempor <br>tempor. In in orci massa.
+			</P>
+		</div>
 	</div>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
@@ -185,7 +194,7 @@
 			currentScreen = 0;
 			localStorage.setItem("storedScreen", currentScreen);
 		}
-		let screens = [".basicPage",".paragraphs",".specialCharacters",".headings",".styling",".allignment",".images",".memePun",".lists",".tables"];
+		let screens = [".basicPage",".paragraphs",".specialCharacters",".headings",".styling",".allignment",".images",".memePun",".lists",".tables",".division"];
 		let toggleDisplay = function(divisionNumber) {
 			$('.display').hide();
 			$(screens[divisionNumber]).show();
