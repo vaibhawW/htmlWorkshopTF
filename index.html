@@ -181,13 +181,11 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
 		var currentScreen = parseInt(localStorage.getItem("storedScreen"));
-		console.log(currentScreen);
-		if(currentScreen == NaN){
+		if(localStorage.getItem("storedScreen") === null){
 			currentScreen = 0;
 			localStorage.setItem("storedScreen", currentScreen);
 		}
 		let screens = [".basicPage",".paragraphs",".specialCharacters",".headings",".styling",".allignment",".images",".memePun",".lists",".tables"];
-		console.log(screens.length);
 		let toggleDisplay = function(divisionNumber) {
 			$('.display').hide();
 			$(screens[divisionNumber]).show();
